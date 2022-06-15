@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Etch-A-Sketch</div>
+    </header>
+    <main>
+        <div class="settings">
+            <div class="size">
+                <label for="size">Size:</label>
+                <input type="slider" id="size" value="10">
+                <span>16x16</span>
+            </div>
+            <div class="color">
+                <label for="color">Color:</label>
+                <input type="color" id="color" value="#000000">
+            </div>
+            <div class="buttons">
+                <button id="rainbow">Rainbox</button>
+                <button id="save">Save</button>
+                <button id="eraser">Eraser</button>
+                <button id="clear">Clear</button>
+            </div>
+            <footer>
+                <p>Made by <a href="www.github.com/TJahongir">Jahongir</a> - &copy; The Odin Project</p>
+            </footer>
+        </div>
+        <div class="sketch">
+            <div class="container"></div>
+            <button class="download btn">Download</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
