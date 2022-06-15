@@ -1,0 +1,95 @@
+/* Defaults */
+:root {
+	--color-primary: #a0bcc2;
+	--color-secondary: #fefbe7;
+	--color-tertiary: #dae5d0;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+
+body {
+	background-color: var(--color-secondary);
+	font-family: "Indie Flower", sans-serif;
+    color: var(--color-primary);
+	height: 100vh;
+	width: 100vw;
+    padding: 1rem 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Header */
+header {
+    height: 10vh;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+
+/* Settings */
+.settings {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* Footer */
+
+/* Sketch */
+.sketch {
+    display: flex;
+    place-content: center center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 2rem;
+}
+
+.container {
+    height: 80%;
+    width: 100%;
+    background-color: #fff;
+}
