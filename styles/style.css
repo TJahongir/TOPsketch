@@ -40,6 +40,7 @@ a {
     letter-spacing: 8px;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
+    margin: 0 1rem;
 }
 
 /* Header */
@@ -68,6 +69,7 @@ main {
 /* Settings */
 .settings {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -76,20 +78,84 @@ main {
     gap: 3rem;
 }
 
+.size {
+
+}
+
+.color {
+    display: flex;
+    text-align: center;
+    place-content: center center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.color label {
+    font-size: 1.5rem;
+}
+
+.color-container {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    place-content: center center;
+}
+
+.color input {
+    width: 120px;
+    height: 120px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
 /* Footer */
 
+footer p{
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #1f1f1f;
+}
 /* Sketch */
 .sketch {
     display: flex;
     place-content: center center;
     flex-direction: column;
     height: 100%;
-    width: 50%;
-    gap: 2rem;
+    width: 100%;
 }
 
 .container {
-    height: 80%;
-    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sketch-container {
+    height: 500px;
+    width: 500px;
     background-color: #fff;
 }
+
+
+
+
+@import './inputStyle.css';
