@@ -43,10 +43,17 @@ const createGrid = (size, container) => {
 };
 createGrid(sizeInputValue, sketchContainer);
 
-const clearGrid = () => {};
+// Eraser Button
+
+// Clear Btn
+const clearGrid = () => {
+    sketchContainer.innerHTML = ''
+    sketchContainer.style.display = ''
+    createGrid(sizeInputValue, sketchContainer)
+};
+clearBtn.addEventListener('click', clearGrid)
 
 // Download Btn
-
 let takeScrn = () => {
 	html2canvas(
 		document.querySelector('#sketch')).then((canvas) => {
