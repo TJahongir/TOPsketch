@@ -20,8 +20,8 @@
 		<main>
 			<div class="settings">
 				<div class="size">
-					<input type="range" id="size" value="10" />
-					<span>16x16</span>
+					<input type="range" id="size" value="7" min='2' max='25' />
+					<span id="sizeDisplay"></span>
 				</div>
 				<div class="color">
 					<input type="color" id="color" value="#000000" />
@@ -45,11 +45,12 @@
 			</div>
 			<div class="sketch">
 				<div class="container">
-					<div class="sketch-container"></div>
-					<button class="download btn">Download</button>
+					<div class="sketch-container" id="sketch" id="capture"></div>
+					<button class="download btn" id="download">Download</button>
 				</div>
 			</div>
 		</main>
-		<script src="./script.js"></script>
+		<script src="./node_modules/html2canvas/dist/html2canvas.js";></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
