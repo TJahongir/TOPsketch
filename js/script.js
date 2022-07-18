@@ -43,7 +43,7 @@ const createGrid = (size, container) => {
 };
 createGrid(sizeInputValue, sketchContainer);
 
-// Eraser Button
+// Eraser Buttonco
 
 // Clear Btn
 const clearGrid = () => {
